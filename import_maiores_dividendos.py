@@ -16,17 +16,18 @@ from datetime import date
 # Imports
 from data.models import MaioresDividendos
 import json
-from pathlib import Path
+
+from decouple import config
+
 from decimal import Decimal
 
 url = "https://investidor10.com.br/acoes/rankings/maiores-dividend-yield/"
 
-email = "italofsilva583@outlook.com"
-senha = "Italo8642@"
+# Pegando os dados do .env
+email = config('email')
+senha = config('senha')
 
-hoje = str(date.today())
-data_atual = str(date.today()).split('-')
-data_format = f'{data_atual[2]}-{data_atual[1]}-{data_atual[0]}'
+data_atual = str(date.today())
 
 option = Options()
 driver = webdriver.Chrome(options=option)
@@ -81,42 +82,47 @@ linhas = table_element.find_elements(By.TAG_NAME, "tr")
 
 dados = []
 
+def para_float(valor):
+    try:
+        return float(valor.replace('%','').replace(',','.'))
+    except (ValueError, AttributeError):
+        return None
+
 for linha in linhas:
     colunas = linha.find_elements(By.XPATH, ".//th | .//td")
     dado = [coluna.text.strip() for coluna in colunas]
-    
+
+    # print("Dado: ", dado)
+    if dado[7] == 'Consumo Cíclico':
+        dado[7] = 'Consumo Ciclico'
+
+    if dado[7] == 'Consumo não Cíclico':
+        dado[7] = 'Consumo nao Ciclico'
+
     objeto = {
         "codigo": dado[0],
-        "dividendo_atual": dado[1].replace('%','').replace(',','.'),
-        "dividendo_medio": dado[2].replace('%','').replace(',','.'),
-        "p_l": dado[3].replace('%','').replace(',','.'),
-        "p_vp": dado[4].replace('%','').replace(',','.'),
-        "margem_liquida": dado[5].replace('%','').replace(',','.'),
-        #"valor_mercado": dado[6].replace('%','').replace(' ','').replace('B','').replace(',','.'),
+        "dividendo_atual": para_float(dado[1]),
+        "dividendo_medio": para_float(dado[2]),
+        "p_l": para_float(dado[3]),
+        "p_vp": para_float(dado[4]),
+        "margem_liquida": para_float(dado[5]),
+        "valor_mercado": dado[6],
         "setor": dado[7],
-        "data": hoje
+        "data": data_atual
 
-    }   
+    }
 
     dados.append(objeto)
-    # print('margem_liquida (type):', type(objeto["margem_liquida"]))
-    # print('margem_liquida:', objeto["margem_liquida"])
-
-    # print('valor_mercado (type):', type(objeto["valor_mercado"]))
-    # print('valor_mercado:', objeto["valor_mercado"])
 
 dados.pop(0)
 (len(dados))
 
-caminho_arquivo = 'data/json/Maiores_Dividend.json'
+caminho_arquivo = 'data/json/Maiores_Dividendos.json'
 
 with open(caminho_arquivo, 'w') as f:
     json.dump(dados, f, indent=4)
 
 driver.quit()
-
-# Como o script está na raiz, o JSON fica em: data/json/Maiores_Dividend.json
-caminho_arquivo = Path('data') / 'json' / 'Maiores_Dividend.json'
 
 with open(caminho_arquivo, 'r', encoding='utf-8') as file:
     dados = json.load(file)
@@ -129,9 +135,9 @@ for item in dados:
         p_l=Decimal(item['p_l']),
         p_vp=Decimal(item['p_vp']),
         margem_liquida=Decimal(item['margem_liquida']),
-        #valor_mercado=Decimal(item['valor_mercado']),
+        valor_mercado=item['valor_mercado'],
         setor=item['setor'],
         data=item['data']
     )
 
-print("Importação concluída.")
+print("Importação de maiores dividendos concluída.")
