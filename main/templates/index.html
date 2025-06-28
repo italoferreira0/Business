@@ -1,11 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Business</title>
+    <title>Business - Início</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        header {
+            background-color: rgb(3, 42, 100);
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+            border-radius: 0 0 12px 12px;
+        }
+
+        header h1 {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: bold;
+        }
+
+        header p {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+        }
+
+        .feature-card {
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            background-color: white;
+            transition: transform 0.2s;
+        }
+
+        .feature-card:hover {
+            transform: scale(1.02);
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            font-size: 0.9rem;
+            color: #6c757d;
+        }
+    </style>
 </head>
+
 <body>
-    
+
+    <header>
+        <h1>📊 Business</h1>
+        <p class="lead">Sistema de Análise de Cotas, Ações e Rendimentos</p>
+    </header>
+
+    <main class="container my-5">
+        <div class="row g-4">
+
+            <!-- Card 1 -->
+            <div class="col-md-4">
+                <a href="#" class="text-decoration-none text-dark">
+                    <div class="p-4 feature-card h-100">
+                        <h4>📈 Dashboard de Ações</h4>
+                        <p>Veja indicadores financeiros, gráficos de preços, dividendos e benchmarks em tempo real.</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-md-4">
+                <a href="" class="text-decoration-none text-dark">
+                    <div class="p-4 feature-card h-100">
+                        <h4>🔍 Análise de Ações</h4>
+                        <p>Consulte dados detalhados, indicadores fundamentalistas, comparações e histórico por ativo.
+                        </p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-4">
+                <a href="#" class="text-decoration-none text-dark">
+                    <div class="p-4 feature-card h-100">
+                        <h4>📁 Carteira</h4>
+                        <p>Visualize e monitore sua carteira personalizada de ações. (Funcionalidade futura)</p>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Projeto Business | Desenvolvido por Italo Ferreira.</p>
+    </footer>
+
 </body>
+
 </html>
