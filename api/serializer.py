@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from data.models import MaioresDividendos, MaioresLucros
+from data.models import MaioresDividendos, MaioresLucros, MaioresDividendosMedio
 
 class MaioresDividendosSerializer(serializers.ModelSerializer):
     dividendo_atual = serializers.FloatField()
@@ -10,6 +10,17 @@ class MaioresDividendosSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = MaioresDividendos
+        fields = ('__all__')
+
+class MaioresDividendosMedioSerializer(serializers.ModelSerializer):
+    dividendo_atual = serializers.FloatField()
+    dividendo_medio = serializers.FloatField()
+    p_l = serializers.FloatField()
+    p_vp = serializers.FloatField()
+    margem_liquida = serializers.FloatField()
+
+    class Meta:
+        model = MaioresDividendosMedio
         fields = ('__all__')
 
 class MaioresLucrosSerializer(serializers.ModelSerializer):

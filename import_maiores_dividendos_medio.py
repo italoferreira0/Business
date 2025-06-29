@@ -14,7 +14,7 @@ import json
 from datetime import date
 
 # Imports
-from data.models import MaioresDividendos
+from data.models import MaioresDividendosMedio
 import json
 
 from decouple import config
@@ -71,8 +71,14 @@ for _ in range(1):
 
 time.sleep(5)
 
-# filtro = driver.find_element(By.CSS_SELECTOR, 'th[data-name="dividend_yield_last_12_months"]')
-# filtro.click()
+filtro = driver.find_element(By.CSS_SELECTOR, 'th[data-name="dividend_yield_last_5_years"]')
+filtro.click()
+
+time.sleep(3)
+
+filtro = driver.find_element(By.CSS_SELECTOR, 'th[data-name="dividend_yield_last_5_years"]')
+filtro.click()
+
 
 time.sleep(5)
 
@@ -117,7 +123,7 @@ for linha in linhas:
 dados.pop(0)
 (len(dados))
 
-caminho_arquivo = 'data/json/Maiores_Dividendos.json'
+caminho_arquivo = 'data/json/Maiores_Dividendos_Medio.json'
 
 with open(caminho_arquivo, 'w') as f:
     json.dump(dados, f, indent=4)
@@ -127,12 +133,19 @@ driver.quit()
 with open(caminho_arquivo, 'r', encoding='utf-8') as file:
     dados = json.load(file)
 
+def parse_decimal_br(valor):
+    if valor is None:
+        return Decimal("0.00")
+    if isinstance(valor, str):
+        valor = valor.replace('.', '').replace(',', '.')
+    return Decimal(valor)
+
 for item in dados:
-    MaioresDividendos.objects.create(
+    MaioresDividendosMedio.objects.create(
         codigo=item['codigo'],
         dividendo_atual=Decimal(item['dividendo_atual']),
         dividendo_medio=Decimal(item['dividendo_medio']),
-        p_l=Decimal(item['p_l']),
+        p_l=parse_decimal_br(item['p_l']),
         p_vp=Decimal(item['p_vp']),
         margem_liquida=Decimal(item['margem_liquida']),
         valor_mercado=item['valor_mercado'],
