@@ -7,10 +7,16 @@ class MaioresDividendosSerializer(serializers.ModelSerializer):
     p_l = serializers.FloatField()
     p_vp = serializers.FloatField()
     margem_liquida = serializers.FloatField()
+    valor_mercado = serializers.CharField()
+
+    # def validate_valor_mercado(self, value):
+    #     if value:
+    #         return value[:-1]
+    #     return value
 
     class Meta:
         model = MaioresDividendos
-        fields = ('__all__')
+        fields = '__all__'
 
 class MaioresDividendosMedioSerializer(serializers.ModelSerializer):
     dividendo_atual = serializers.FloatField()

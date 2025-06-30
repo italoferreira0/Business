@@ -71,8 +71,8 @@ for _ in range(1):
 
 time.sleep(5)
 
-filtro = driver.find_element(By.CSS_SELECTOR, 'th[data-name="name_sector"]')
-filtro.click()
+# filtro = driver.find_element(By.CSS_SELECTOR, 'th[data-name="name_sector"]')
+# filtro.click()
 
 time.sleep(5)
 

@@ -4,6 +4,7 @@ from django.urls import reverse
 from rest_framework.request import Request
 from data.models import MaioresDividendos, MaioresLucros, MaioresDividendosMedio
 from .serializer import MaioresDividendosSerializer, MaioresLucrosSerializer, MaioresDividendosMedioSerializer
+from datetime import date
 
 class HomePageView(APIView):
     def get(self, request):
@@ -33,7 +34,8 @@ class MaioresDividendosMedioView(APIView):
 
 class Top10MaioresDividendosView(APIView):
     def get(self, request):
-        top_dividendo = MaioresDividendos.objects.order_by('-dividendo_atual')[:10]
+        hoje = date.today()
+        top_dividendo = MaioresDividendos.objects.filter(data=hoje).order_by('-dividendo_atual')[:10]
         serializer = MaioresDividendosSerializer(top_dividendo, many=True)
         return Response(serializer.data)
 
@@ -51,6 +53,9 @@ class MaioresLucrosView(APIView):
 
 class Top10MaioresLucrosView(APIView):
     def get(self, request):
-        top_maioresLucros = MaioresLucros.objects.order_by('-lucro')[:10]
+        hoje = date.today()
+        top_maioresLucros = MaioresLucros.objects.filter(data=hoje).order_by('-lucro')[:10]
         serializer = MaioresLucrosSerializer(top_maioresLucros, many=True)
         return Response(serializer.data)
+    
+    
