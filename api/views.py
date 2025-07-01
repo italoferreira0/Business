@@ -47,15 +47,18 @@ class Top10MaioresDividendosMedioView(APIView):
 
 class MaioresLucrosView(APIView):
     def get(self, request):
-        maioresLucros = MaioresLucros.objects.order_by('-setor')
+        maioresLucros = MaioresLucros.objects.order_by('-lucro')
         serializer = MaioresLucrosSerializer(maioresLucros, many=True)
         return Response(serializer.data)
 
 class Top10MaioresLucrosView(APIView):
     def get(self, request):
-        hoje = date.today()
-        top_maioresLucros = MaioresLucros.objects.filter(data=hoje).order_by('-lucro')[:10]
-        serializer = MaioresLucrosSerializer(top_maioresLucros, many=True)
+        hoje = date.today()  # Data de hoje
+        # Filtra os registros com data igual a hoje e ordena decrescentemente por lucro
+        top_maiores_lucros = MaioresLucros.objects.filter(data=hoje).order_by('-lucro')[:10]
+        
+        # Serializa os dados para resposta JSON
+        serializer = MaioresLucrosSerializer(top_maiores_lucros, many=True)
         return Response(serializer.data)
     
     

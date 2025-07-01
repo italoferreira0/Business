@@ -105,9 +105,25 @@ for linha in linhas:
     if dado[7] == 'Materiais Básicos':
         dado[7] = 'Materiais Basicos'
 
+    if dado[1]:
+        valor = dado[1].strip()
+        unidade = valor[-1]  # Último caractere
+
+        try:
+            lucro = float(valor[:-1].replace(",", "."))
+            if unidade == "M":
+                lucro = lucro * 1_000_000
+            elif unidade == "B":
+                lucro = lucro * 1_000_000_000
+            else:
+                lucro = float(valor.replace(",", ".")) 
+        except ValueError:
+            lucro = 0  
+
+            
     objeto = {
         "codigo": dado[0],
-        "lucro": dado[1],
+        "lucro": lucro,
         "p_l": para_float(dado[2]),
         "p_vp": para_float(dado[3]),
         "margem_liquida": para_float(dado[4]),

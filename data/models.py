@@ -35,7 +35,7 @@ class MaioresDividendosMedio(models.Model):
 
 class MaioresLucros(models.Model):
     codigo = models.CharField(max_length=50)
-    lucro = models.CharField(max_length=50)
+    lucro = models.DecimalField(max_digits=20, decimal_places=2)
     p_l = models.DecimalField(max_digits=6, decimal_places=2)
     p_vp = models.DecimalField(max_digits=6, decimal_places=2)
     margem_liquida = models.DecimalField(max_digits=6, decimal_places=2)
@@ -47,5 +47,5 @@ class MaioresLucros(models.Model):
     class Meta:
         verbose_name = 'Maior Lucro'
         verbose_name_plural = 'Maiores Lucros'
-        ordering = ['-setor']
+        ordering = ['-lucro']
 
