@@ -1,6 +1,9 @@
 from django.shortcuts import render
 from django.contrib.auth.mixins import LoginRequiredMixin
+from django.contrib.auth import authenticate, login
+from django.shortcuts import render, redirect
 from django.contrib.auth import logout
+
 
 # Create your views here.
 from django.views.generic import TemplateView
@@ -10,15 +13,13 @@ class IndexView(TemplateView):
 
 class DashboardView(LoginRequiredMixin, TemplateView):
     template_name = 'dashboard.html'
+    # redirect_field_name = 'next'  
 
 class AnaliseView(LoginRequiredMixin, TemplateView):
     template_name = 'analise.html'
 
 class CarteiraView(LoginRequiredMixin, TemplateView):
     template_name = 'carteira.html'
-
-from django.contrib.auth import authenticate, login
-from django.shortcuts import render, redirect
 
 def login_view(request):
     if request.method == 'POST':

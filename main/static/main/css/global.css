@@ -1,0 +1,70 @@
+body {
+    background-color: #9db0c3;
+}
+
+.navbar-custom {
+    background-color: #32329a !important;
+}
+
+header h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+}
+
+header p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.feature-card {
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    background-color: white;
+    transition: transform 0.2s;
+}
+
+.feature-card:hover {
+    transform: scale(1.02);
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+.dropdown-toggle {
+    color: #b8b8b8 !important;
+    /* amarelo como destaque */
+}
+
+/* Opcional: mudar também o ícone junto */
+.dropdown-toggle {
+    color: #b8b8b8;
+}
+
+.dropdown-toggle:hover {
+    color: #ffffff !important;
+    /* amarelo como destaque */
+    transition: all 0.2s ease;
+}
+
+/* Opcional: mudar também o ícone junto */
+.dropdown-toggle:hover i {
+    color: #ffffff;
+}
+
+.dropdown-menu-sm {
+    min-width: 100px;
+    /* ou o tamanho que quiser */
+    font-size: 0.875rem;
+    /* menor fonte, opcional */
+    padding: 0.25rem 0;
+    /* menos espaço interno */
+}
+
+.dropdown-item:hover {
+    background-color: #f1f1f1;
+    color: #000;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
