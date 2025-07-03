@@ -1,5 +1,5 @@
 const hoje = new Date().toLocaleDateString('en-CA', {
-  timeZone: 'America/Sao_Paulo'
+    timeZone: 'America/Sao_Paulo'
 });
 async function fetchTop10dividendo() {
     const response = await fetch('http://127.0.0.1:8000/api/top10-dividendos/');
@@ -97,10 +97,86 @@ async function graficoTop10Dividendos() {
 
     var chart = new ApexCharts(document.querySelector("#top10dividendos"), options);
     chart.render();
-
-
 }
+
+async function fetchTop10Lucros() {
+    const response = await fetch('http://127.0.0.1:8000/api/top10-maiores-lucros/');
+    const data = await response.json();
+    return data;
+}
+
+async function graficoTop10Lucros() {
+    const dados = await fetchTop10Lucros();
+
+    const acoes = dados.map(item => item.codigo);
+    const lucros = dados.map(item => item.lucro);
+
+    var options = {
+        title: {
+            text: `Top 10 Ações que mais lucraram (${hoje})`,
+            align: 'center',
+            style: {
+                fontSize: '16px',
+                fontWeight: 'bold',
+                color: '#444'
+            }
+        },
+        series: [{
+            name: 'Lucro',
+            data: lucros
+        }],
+        chart: {
+            type: 'bar',
+            height: 350
+        },
+        plotOptions: {
+            bar: {
+                borderRadius: 4,
+                borderRadiusApplication: 'end',
+                horizontal: true,
+                dataLabels: {
+                    position: 'inside' // ✅ Mostra o valor dentro da barra
+                }
+            }
+        },
+        dataLabels: {
+            enabled: true,
+            formatter: function (val) {
+                return 'R$ ' + val.toLocaleString('pt-BR');
+            },
+            style: {
+                fontSize: '13px',
+                colors: ['#111111'] // valor em branco para aparecer sobre a barra
+            }
+        },
+        xaxis: {
+            categories: acoes,
+            labels: {
+                formatter: function (val) {
+                    return 'R$ ' + val.toLocaleString('pt-BR');
+                }
+            }
+        },
+        tooltip: {
+            y: {
+                formatter: function (val) {
+                    return 'R$ ' + val.toLocaleString('pt-BR');
+                }
+            }
+        }
+    };
+
+    const chart = new ApexCharts(document.querySelector("#top10lucros"), options);
+    chart.render();
+}
+
+
 
 document.addEventListener("DOMContentLoaded", function () {
     graficoTop10Dividendos();
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    graficoTop10Lucros();
+});
+
