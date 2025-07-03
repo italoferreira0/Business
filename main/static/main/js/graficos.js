@@ -170,7 +170,74 @@ async function graficoTop10Lucros() {
     chart.render();
 }
 
+async function fetchMaioresDividendos() {
+    const response = await fetch('http://127.0.0.1:8000/api/maiores-dividendos/');
+    const data = await response.json();
+    return data;
+}
 
+async function graficoMaiorVariacaoDividendos() {
+    const dados = await fetchMaioresDividendos();
+    console.log("maiores dividendos: ", dados);
+
+    // Agrupa os dividendos por código
+    const agrupadoPorCodigo = {};
+    dados.forEach(item => {
+        if (!agrupadoPorCodigo[item.codigo]) {
+            agrupadoPorCodigo[item.codigo] = [];
+        }
+        agrupadoPorCodigo[item.codigo].push({ x: item.data, y: item.dividendo_atual });
+    });
+
+    // Calcula a variação para cada ação
+    const variacoes = Object.entries(agrupadoPorCodigo).map(([codigo, valores]) => {
+        const dividendos = valores.map(v => v.y);
+        const max = Math.max(...dividendos);
+        const min = Math.min(...dividendos);
+        return { codigo, variacao: max - min };
+    });
+
+    // Pega os 5 com maior variação
+    const top5 = variacoes
+        .sort((a, b) => b.variacao - a.variacao)
+        .slice(0, 5)
+        .map(item => item.codigo);
+
+    // Filtra os dados apenas com os top 5
+    const dadosFiltrados = {};
+    top5.forEach(codigo => {
+        dadosFiltrados[codigo] = agrupadoPorCodigo[codigo]
+            .sort((a, b) => new Date(a.x) - new Date(b.x));
+    });
+
+    // Converte para o formato do ApexCharts
+    const series = top5.map(codigo => ({
+        name: codigo,
+        data: dadosFiltrados[codigo]
+    }));
+
+    const options = {
+        chart: {
+            type: 'line',
+            height: 400
+        },
+        title: {
+            text: 'Top 5 Ações com Maior Variação de Dividendos',
+            align: 'center'
+        },
+        xaxis: {
+            type: 'category',
+            title: { text: 'Data' }
+        },
+        yaxis: {
+            title: { text: 'Dividendo Atual' }
+        },
+        series: series
+    };
+
+    const chart = new ApexCharts(document.querySelector("#variacaoDeDividendos"), options);
+    chart.render();
+}
 
 document.addEventListener("DOMContentLoaded", function () {
     graficoTop10Dividendos();
@@ -179,4 +246,9 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
     graficoTop10Lucros();
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    graficoMaiorVariacaoDividendos();
+});
+
 
