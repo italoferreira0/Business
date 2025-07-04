@@ -68,3 +68,14 @@ footer {
     color: #000;
     transition: background-color 0.2s ease, color 0.2s ease;
 }
+
+.links-nav {
+    margin-left: 10px;
+    color: #b8b8b8;
+}
+
+.links-nav:hover {
+    color: #ffffff;
+    transition: background-color 0.2s ease, color 0.2s ease;
+
+}

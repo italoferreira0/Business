@@ -21,8 +21,10 @@ async function graficoTop10Dividendos() {
             data: dividendo_atual
         }],
         chart: {
-            height: 350,
+            height: 300,
+            width: 500,
             type: 'bar',
+
         },
         plotOptions: {
             bar: {
@@ -39,8 +41,8 @@ async function graficoTop10Dividendos() {
             },
             offsetY: -20,
             style: {
-                fontSize: '12px',
-                colors: ["#304758"]
+                fontSize: '11px',
+                colors: ["#black"]
             }
         },
 
@@ -88,7 +90,7 @@ async function graficoTop10Dividendos() {
             text: `Top 10 Ações que mais pagaram dividendos (${hoje})`,
             align: 'center',
             style: {
-                fontSize: '16px',
+                fontSize: '14px',
                 fontWeight: 'bold',
                 color: '#444'
             }
@@ -98,6 +100,90 @@ async function graficoTop10Dividendos() {
     var chart = new ApexCharts(document.querySelector("#top10dividendos"), options);
     chart.render();
 }
+
+async function graficoPvp() {
+    const dados = await fetchMaioresDividendos();
+
+    const acoes = dados.map(item => item.codigo);
+    const pvp = dados.map(item => item.p_vp);
+
+    function gerarNumeroAleatorio(tamanho) {
+        return Math.floor(Math.random() * tamanho);
+    }
+
+    function getCor(valor) {
+        if (valor > 4) 
+            return '#e61919'
+        else if (valor > 2) 
+            return '#e5e619';
+        return '#0d730d';
+    }
+
+    let chart; // manter referência global para destruir depois
+    let tamanho = pvp.length;
+
+    function criarGrafico() {
+        const numeroAleatorio = gerarNumeroAleatorio(tamanho);
+        const valorEscolhido = pvp[numeroAleatorio];
+        const acaoEscolhida = acoes[numeroAleatorio];
+        const corLabel = getCor(valorEscolhido);
+
+        console.log("Número aleatório atualizado:", numeroAleatorio);
+        console.log("Valor escolhido:", valorEscolhido);
+        console.log("Ação escolhida:", acaoEscolhida);
+
+        const options = {
+            series: [valorEscolhido],
+            chart: {
+                height: 350,
+                type: 'radialBar',
+            },
+            colors: [corLabel],
+            title: {
+                text: `P/VP`,
+                align: 'center',
+                style: {
+                    fontSize: '16px',
+                    fontWeight: 'bold'
+                }
+            },
+            plotOptions: {
+                radialBar: {
+                    hollow: {
+                        size: '70%',
+                    },
+                    dataLabels: {
+                        name: {
+                            show: true,
+                            fontSize: '16px'
+                        },
+                        value: {
+                            formatter: function (val) {
+                                return val.toFixed(2);
+                            }
+                        }
+                    }
+                },
+            },
+            labels: [acaoEscolhida],
+        };
+
+        // Destroi gráfico anterior, se existir
+        if (chart) {
+            chart.destroy();
+        }
+
+        chart = new ApexCharts(document.querySelector("#pvp"), options);
+        chart.render();
+    }
+
+    criarGrafico(); // cria o gráfico inicialmente
+    setInterval(criarGrafico, 4000); // recria a cada 4 segundos
+}
+
+
+
+
 
 async function fetchTop10Lucros() {
     const response = await fetch('http://127.0.0.1:8000/api/top10-maiores-lucros/');
@@ -116,7 +202,7 @@ async function graficoTop10Lucros() {
             text: `Top 10 Ações que mais lucraram (${hoje})`,
             align: 'center',
             style: {
-                fontSize: '16px',
+                fontSize: '14px',
                 fontWeight: 'bold',
                 color: '#444'
             }
@@ -127,7 +213,8 @@ async function graficoTop10Lucros() {
         }],
         chart: {
             type: 'bar',
-            height: 350
+            height: 300,
+            width: 500,
         },
         plotOptions: {
             bar: {
@@ -145,8 +232,8 @@ async function graficoTop10Lucros() {
                 return 'R$ ' + val.toLocaleString('pt-BR');
             },
             style: {
-                fontSize: '13px',
-                colors: ['#111111'] // valor em branco para aparecer sobre a barra
+                fontSize: '11px',
+                colors: ['#black'] 
             }
         },
         xaxis: {
@@ -239,16 +326,83 @@ async function graficoMaiorVariacaoDividendos() {
     chart.render();
 }
 
+async function fetchMaioresLucros() {
+    const response = await fetch('http://127.0.0.1:8000/api/maiores-lucros/');
+    const data = await response.json();
+    return data;
+}
+
+async function graficoMaiorVariacaoLucros() {
+    const dados = await fetchMaioresLucros();
+    console.log("maiores Lucros: ", dados);
+
+    // Agrupa os dividendos por código
+    const agrupadoPorCodigo = {};
+    dados.forEach(item => {
+        if (!agrupadoPorCodigo[item.codigo]) {
+            agrupadoPorCodigo[item.codigo] = [];
+        }
+        agrupadoPorCodigo[item.codigo].push({ x: item.data, y: item.lucro });
+    });
+
+    // Calcula a variação para cada ação
+    const variacoes = Object.entries(agrupadoPorCodigo).map(([codigo, valores]) => {
+        const dividendos = valores.map(v => v.y);
+        const max = Math.max(...dividendos);
+        const min = Math.min(...dividendos);
+        return { codigo, variacao: max - min };
+    });
+
+    // Pega os 5 com maior variação
+    const top5 = variacoes
+        .sort((a, b) => b.variacao - a.variacao)
+        .slice(0, 5)
+        .map(item => item.codigo);
+
+    // Filtra os dados apenas com os top 5
+    const dadosFiltrados = {};
+    top5.forEach(codigo => {
+        dadosFiltrados[codigo] = agrupadoPorCodigo[codigo]
+            .sort((a, b) => new Date(a.x) - new Date(b.x));
+    });
+
+    // Converte para o formato do ApexCharts
+    const series = top5.map(codigo => ({
+        name: codigo,
+        data: dadosFiltrados[codigo]
+    }));
+
+    const options = {
+        chart: {
+            type: 'line',
+            height: 400
+        },
+        title: {
+            text: 'Top 5 Ações com Maior Variação de Lucros',
+            align: 'center'
+        },
+        xaxis: {
+            type: 'category',
+            title: { text: 'Data' }
+        },
+        yaxis: {
+            title: { text: 'Lucro' }
+        },
+        series: series
+    };
+
+    const chart = new ApexCharts(document.querySelector("#variacaoDeLucros"), options);
+    chart.render();
+
+}
+
+
 document.addEventListener("DOMContentLoaded", function () {
     graficoTop10Dividendos();
-});
-
-document.addEventListener("DOMContentLoaded", function () {
     graficoTop10Lucros();
-});
-
-document.addEventListener("DOMContentLoaded", function () {
     graficoMaiorVariacaoDividendos();
+    graficoMaiorVariacaoLucros();
+    graficoPvp()
 });
 
 
