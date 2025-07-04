@@ -21,11 +21,12 @@ async function graficoTop10Dividendos() {
             data: dividendo_atual
         }],
         chart: {
-            height: 300,
-            width: 500,
+            height: 350,
+            width: '100%',
             type: 'bar',
 
         },
+        colors: ['#5353ec'],
         plotOptions: {
             bar: {
                 borderRadius: 10,
@@ -37,11 +38,11 @@ async function graficoTop10Dividendos() {
         dataLabels: {
             enabled: true,
             formatter: function (val) {
-                return val + "%";
+                return val.toFixed(1) + "%";
             },
             offsetY: -20,
             style: {
-                fontSize: '11px',
+                fontSize: '10px',
                 colors: ["#black"]
             }
         },
@@ -90,7 +91,7 @@ async function graficoTop10Dividendos() {
             text: `Top 10 Ações que mais pagaram dividendos (${hoje})`,
             align: 'center',
             style: {
-                fontSize: '14px',
+                fontSize: '12px',
                 fontWeight: 'bold',
                 color: '#444'
             }
@@ -112,9 +113,9 @@ async function graficoPvp() {
     }
 
     function getCor(valor) {
-        if (valor > 4) 
+        if (valor > 4)
             return '#e61919'
-        else if (valor > 2) 
+        else if (valor > 2)
             return '#e5e619';
         return '#0d730d';
     }
@@ -161,6 +162,7 @@ async function graficoPvp() {
                             formatter: function (val) {
                                 return val.toFixed(2);
                             }
+
                         }
                     }
                 },
@@ -182,9 +184,6 @@ async function graficoPvp() {
 }
 
 
-
-
-
 async function fetchTop10Lucros() {
     const response = await fetch('http://127.0.0.1:8000/api/top10-maiores-lucros/');
     const data = await response.json();
@@ -202,7 +201,7 @@ async function graficoTop10Lucros() {
             text: `Top 10 Ações que mais lucraram (${hoje})`,
             align: 'center',
             style: {
-                fontSize: '14px',
+                fontSize: '12px',
                 fontWeight: 'bold',
                 color: '#444'
             }
@@ -213,9 +212,10 @@ async function graficoTop10Lucros() {
         }],
         chart: {
             type: 'bar',
-            height: 300,
-            width: 500,
+            height: 350,
+            width: '100%'
         },
+        colors: ["#1919e6"],
         plotOptions: {
             bar: {
                 borderRadius: 4,
@@ -233,7 +233,7 @@ async function graficoTop10Lucros() {
             },
             style: {
                 fontSize: '11px',
-                colors: ['#black'] 
+                colors: ['#black']
             }
         },
         xaxis: {
@@ -306,11 +306,17 @@ async function graficoMaiorVariacaoDividendos() {
     const options = {
         chart: {
             type: 'line',
-            height: 400
+            height: 400,
+            width: '100%'
         },
         title: {
-            text: 'Top 5 Ações com Maior Variação de Dividendos',
-            align: 'center'
+            text: 'Ações com Maior Variação de Dividendos',
+            align: 'left',
+            style: {
+                fontSize: '12px',
+                fontWeight: 'bold',
+                color: '#444'
+            }
         },
         xaxis: {
             type: 'category',
@@ -375,11 +381,17 @@ async function graficoMaiorVariacaoLucros() {
     const options = {
         chart: {
             type: 'line',
-            height: 400
+            height: 400,
+            width: '100%'
         },
         title: {
-            text: 'Top 5 Ações com Maior Variação de Lucros',
-            align: 'center'
+            text: 'Ações com Maior Variação de Lucros',
+            align: 'left',
+            style: {
+                fontSize: '12px',
+                fontWeight: 'bold',
+                color: '#444'
+            }
         },
         xaxis: {
             type: 'category',
@@ -397,12 +409,78 @@ async function graficoMaiorVariacaoLucros() {
 }
 
 
+
+async function graficoMaiorVariacaoPvp() {
+    const dados = await fetchMaioresDividendos();
+    console.log("maiores dividendos: ", dados);
+
+    // Agrupa os dividendos por código
+    const agrupadoPorCodigo = {};
+    dados.forEach(item => {
+        if (!agrupadoPorCodigo[item.codigo]) {
+            agrupadoPorCodigo[item.codigo] = [];
+        }
+        agrupadoPorCodigo[item.codigo].push({ x: item.data, y: item.p_vp });
+    });
+
+    // Calcula a variação para cada ação
+    const variacoes = Object.entries(agrupadoPorCodigo).map(([codigo, valores]) => {
+        const dividendos = valores.map(v => v.y);
+        const max = Math.max(...dividendos);
+        const min = Math.min(...dividendos);
+        return { codigo, variacao: max - min };
+    });
+
+    // Pega os 5 com maior variação
+    const top5 = variacoes
+        .sort((a, b) => b.variacao - a.variacao)
+        .slice(0, 5)
+        .map(item => item.codigo);
+
+    // Filtra os dados apenas com os top 5
+    const dadosFiltrados = {};
+    top5.forEach(codigo => {
+        dadosFiltrados[codigo] = agrupadoPorCodigo[codigo]
+            .sort((a, b) => new Date(a.x) - new Date(b.x));
+    });
+
+    // Converte para o formato do ApexCharts
+    const series = top5.map(codigo => ({
+        name: codigo,
+        data: dadosFiltrados[codigo]
+    }));
+
+    const options = {
+        chart: {
+            type: 'line',
+            height: 400,
+            width: '100%'
+        },
+        title: {
+            text: 'Ações com Maior Variação de P/VP',
+            align: 'center'
+        },
+        xaxis: {
+            type: 'category',
+            title: { text: 'Data' }
+        },
+        yaxis: {
+            title: { text: 'P/VP Atual' }
+        },
+        series: series
+    };
+
+    const chart = new ApexCharts(document.querySelector("#variacaoDePvp"), options);
+    chart.render();
+}
+
 document.addEventListener("DOMContentLoaded", function () {
     graficoTop10Dividendos();
+    graficoPvp()
     graficoTop10Lucros();
     graficoMaiorVariacaoDividendos();
     graficoMaiorVariacaoLucros();
-    graficoPvp()
+    graficoMaiorVariacaoPvp()
 });
 
 

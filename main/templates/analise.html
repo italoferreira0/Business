@@ -22,32 +22,54 @@
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-custom">
         <div class="container-fluid">
-            <a class="navbar-brand" href="{% url "index" %}"
-                style="color: white; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">📊
-                Business</a>
-            <div id="navbarNav" class="d-flex align-items-center me-1">
-        <div class="me-3">
-            <a href="{% url "dashboard" %}" class="text-decoration-none links-nav"><i class="fa-solid fa-chart-simple me-1 mr-3"></i>Dashboard</a>
-            <a href="{% url "analise" %}" class="text-decoration-none links-nav" ><i class="fa-solid fa-magnifying-glass me-1 mt-1"></i>Analise</a>
-            <a href="{% url "carteira" %}" class="text-decoration-none links-nav" ><i class="fa-solid fa-folder-open me-1 mt-1"></i>Carteira</a>
-        </div>
-
-        {% if user.is_authenticated %}
-        <div class="dropdown me-3">
-            <a class="d-flex align-items-center text-decoration-none dropdown-toggle" href="#" role="button"
-            data-bs-toggle="dropdown" aria-expanded="false" style="color: #f8f9fa;">
-                <i class="fa-solid fa-circle-user me-2 mt-1"></i>{{ user.username }}
+            <a class="navbar-brand" href="{% url 'index' %}" style="color: white;">
+                📊 Business
             </a>
-            <ul class="dropdown-menu dropdown-menu-sm">
-                <li><a class="dropdown-item" href="{% url 'logout' %}">Logout</a></li>
-            </ul>
-        </div>
-        {% else %}
-        <a href="{% url 'login' %}" class="d-flex align-items-center text-decoration-none" style="color: #f8f9fa;">
-            <i class="fa-solid fa-circle-user me-2 mt-1"></i>Login
-        </a>
-        {% endif %}
-        </div>
+
+            <!-- Botão hambúrguer -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Conteúdo colapsável da navbar -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item me-2">
+                        <a class="nav-link text-decoration-none links-nav" href="{% url 'dashboard' %}">
+                            <i class="fa-solid fa-chart-simple me-1"></i>Dashboard
+                        </a>
+                    </li>
+                    <li class="nav-item me-2">
+                        <a class="nav-link text-decoration-none links-nav" href="{% url 'analise' %}">
+                            <i class="fa-solid fa-magnifying-glass me-1"></i>Analise
+                        </a>
+                    </li>
+                    <li class="nav-item me-2">
+                        <a class="nav-link text-decoration-none links-nav" href="{% url 'carteira' %}">
+                            <i class="fa-solid fa-folder-open me-1"></i>Carteira
+                        </a>
+                    </li>
+
+                    {% if user.is_authenticated %}
+                    <li class="nav-item dropdown me-2">
+                        <a class="nav-link dropdown-toggle d-flex align-items-center text-decoration-none"
+                        href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #f8f9fa;">
+                            <i class="fa-solid fa-circle-user me-2"></i>{{ user.username }}
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="{% url 'logout' %}">Logout</a></li>
+                        </ul>
+                    </li>
+                    {% else %}
+                    <li class="nav-item me-2">
+                        <a class="nav-link d-flex align-items-center text-decoration-none" href="{% url 'login' %}" style="color: #f8f9fa;">
+                            <i class="fa-solid fa-circle-user me-2"></i>Login
+                        </a>
+                    </li>
+                    {% endif %}
+                </ul>
+            </div>
         </div>
     </nav>
 

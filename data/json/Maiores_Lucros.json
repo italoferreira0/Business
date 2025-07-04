@@ -2,79 +2,79 @@
     {
         "codigo": "PETR4",
         "lucro": 48530000000.0,
-        "p_l": 8.59,
-        "p_vp": 1.04,
+        "p_l": 8.62,
+        "p_vp": 1.05,
         "margem_liquida": 9.7,
-        "valor_mercado": "434,96 B",
+        "valor_mercado": "437,74 B",
         "dividendo_medio": 25.73,
         "setor": "Petroleo, Gas e Biocombustiveis",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "ITUB4",
         "lucro": 42800000000.0,
-        "p_l": 9.5,
-        "p_vp": 1.97,
+        "p_l": 9.74,
+        "p_vp": 2.02,
         "margem_liquida": 11.84,
-        "valor_mercado": "375,55 B",
+        "valor_mercado": "384,48 B",
         "dividendo_medio": 4.82,
         "setor": "Financeiro",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "VALE3",
         "lucro": 30270000000.0,
-        "p_l": 8.01,
-        "p_vp": 1.25,
+        "p_l": 7.94,
+        "p_vp": 1.24,
         "margem_liquida": 14.88,
-        "valor_mercado": "252,01 B",
+        "valor_mercado": "249,83 B",
         "dividendo_medio": 9.55,
         "setor": "Materiais Basicos",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "BBAS3",
         "lucro": 24670000000.0,
-        "p_l": 5.79,
-        "p_vp": 0.69,
+        "p_l": 5.88,
+        "p_vp": 0.7,
         "margem_liquida": 7.81,
-        "valor_mercado": "126,08 B",
+        "valor_mercado": "127,97 B",
         "dividendo_medio": 8.5,
         "setor": "Financeiro",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "BBDC3",
         "lucro": 19020000000.0,
-        "p_l": 7.94,
-        "p_vp": 0.87,
+        "p_l": 8.15,
+        "p_vp": 0.9,
         "margem_liquida": 8.49,
-        "valor_mercado": "160,87 B",
+        "valor_mercado": "165,22 B",
         "dividendo_medio": 6.18,
         "setor": "Financeiro",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "ITSA4",
         "lucro": 15390000000.0,
-        "p_l": 7.86,
-        "p_vp": 1.39,
+        "p_l": 8.05,
+        "p_vp": 1.43,
         "margem_liquida": 185.53,
-        "valor_mercado": "119,61 B",
+        "valor_mercado": "122,40 B",
         "dividendo_medio": 6.28,
         "setor": "Financeiro",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "ABEV3",
         "lucro": 14850000000.0,
-        "p_l": 14.97,
-        "p_vp": 2.29,
+        "p_l": 14.74,
+        "p_vp": 2.25,
         "margem_liquida": 15.74,
-        "valor_mercado": "216,09 B",
+        "valor_mercado": "212,78 B",
         "dividendo_medio": 4.66,
         "setor": "Consumo nao Ciclico",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "SANB11",
@@ -82,21 +82,21 @@
         "p_l": 7.89,
         "p_vp": 1.25,
         "margem_liquida": 9.93,
-        "valor_mercado": "110,73 B",
+        "valor_mercado": "110,50 B",
         "dividendo_medio": 7.12,
         "setor": "Financeiro",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "BPAC11",
         "lucro": 12230000000.0,
-        "p_l": 13.02,
-        "p_vp": 2.66,
+        "p_l": 13.23,
+        "p_vp": 2.7,
         "margem_liquida": 27.8,
-        "valor_mercado": "204,53 B",
+        "valor_mercado": "210,96 B",
         "dividendo_medio": 2.23,
         "setor": "Financeiro",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "JBSS3",
@@ -107,51 +107,51 @@
         "valor_mercado": "33,89 B",
         "dividendo_medio": 6.32,
         "setor": "Consumo nao Ciclico",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "PRIO3",
         "lucro": 11330000000.0,
-        "p_l": 3.34,
-        "p_vp": 1.42,
+        "p_l": 3.37,
+        "p_vp": 1.43,
         "margem_liquida": 72.61,
-        "valor_mercado": "37,83 B",
+        "valor_mercado": "38,18 B",
         "dividendo_medio": 0.03,
         "setor": "Petroleo, Gas e Biocombustiveis",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "SBSP3",
         "lucro": 10240000000.0,
-        "p_l": 7.71,
-        "p_vp": 2.06,
+        "p_l": 7.85,
+        "p_vp": 2.09,
         "margem_liquida": 26.93,
-        "valor_mercado": "78,97 B",
+        "valor_mercado": "80,34 B",
         "dividendo_medio": 1.81,
         "setor": "Utilidade P\u00fablica",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "ELET3",
         "lucro": 9700000000.0,
-        "p_l": 9.56,
-        "p_vp": 0.76,
+        "p_l": 9.76,
+        "p_vp": 0.78,
         "margem_liquida": 23.14,
-        "valor_mercado": "99,15 B",
+        "valor_mercado": "101,01 B",
         "dividendo_medio": 3.54,
         "setor": "Utilidade P\u00fablica",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "BBSE3",
         "lucro": 8640000000.0,
-        "p_l": 8.39,
-        "p_vp": 6.22,
+        "p_l": 8.44,
+        "p_vp": 6.26,
         "margem_liquida": 0.0,
-        "valor_mercado": "72,54 B",
+        "valor_mercado": "73,00 B",
         "dividendo_medio": 7.5,
         "setor": "Financeiro",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "AMER3",
@@ -159,296 +159,296 @@
         "p_l": 0.15,
         "p_vp": 0.24,
         "margem_liquida": 53.38,
-        "valor_mercado": "1,07 B",
+        "valor_mercado": "1,08 B",
         "dividendo_medio": 1.29,
         "setor": "Consumo Ciclico",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "CMIG4",
         "lucro": 7010000000.0,
-        "p_l": 4.43,
-        "p_vp": 1.11,
+        "p_l": 4.54,
+        "p_vp": 1.14,
         "margem_liquida": 17.25,
-        "valor_mercado": "35,58 B",
+        "valor_mercado": "35,92 B",
         "dividendo_medio": 10.2,
         "setor": "Utilidade P\u00fablica",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "WEGE3",
         "lucro": 6580000000.0,
-        "p_l": 28.44,
-        "p_vp": 8.37,
+        "p_l": 28.65,
+        "p_vp": 8.43,
         "margem_liquida": 15.64,
-        "valor_mercado": "178,05 B",
+        "valor_mercado": "179,35 B",
         "dividendo_medio": 1.25,
         "setor": "Bens Industriais",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "VBBR3",
         "lucro": 6180000000.0,
-        "p_l": 3.86,
-        "p_vp": 1.16,
+        "p_l": 3.98,
+        "p_vp": 1.2,
         "margem_liquida": 3.49,
-        "valor_mercado": "23,89 B",
+        "valor_mercado": "24,63 B",
         "dividendo_medio": 6.32,
         "setor": "Petroleo, Gas e Biocombustiveis",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "VIVT3",
         "lucro": 5720000000.0,
-        "p_l": 17.99,
-        "p_vp": 1.51,
+        "p_l": 18.37,
+        "p_vp": 1.54,
         "margem_liquida": 10.07,
-        "valor_mercado": "102,73 B",
+        "valor_mercado": "104,88 B",
         "dividendo_medio": 6.08,
         "setor": "Telecomunica\u00e7\u00f5es",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "CPFE3",
         "lucro": 5620000000.0,
-        "p_l": 8.7,
-        "p_vp": 2.09,
+        "p_l": 8.86,
+        "p_vp": 2.12,
         "margem_liquida": 12.37,
-        "valor_mercado": "46,39 B",
+        "valor_mercado": "47,23 B",
         "dividendo_medio": 9.06,
         "setor": "Utilidade P\u00fablica",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "B3SA3",
         "lucro": 4730000000.0,
-        "p_l": 16.08,
-        "p_vp": 4.05,
+        "p_l": 16.35,
+        "p_vp": 4.12,
         "margem_liquida": 43.97,
-        "valor_mercado": "76,10 B",
+        "valor_mercado": "77,36 B",
         "dividendo_medio": 4.53,
         "setor": "Financeiro",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "ENGI11",
         "lucro": 4530000000.0,
-        "p_l": 5.86,
-        "p_vp": 1.19,
+        "p_l": 6.03,
+        "p_vp": 1.23,
         "margem_liquida": 10.73,
-        "valor_mercado": "22,74 B",
+        "valor_mercado": "23,23 B",
         "dividendo_medio": 4.01,
         "setor": "Utilidade P\u00fablica",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "BRFS3",
         "lucro": 4280000000.0000005,
-        "p_l": 8.7,
-        "p_vp": 2.08,
+        "p_l": 8.44,
+        "p_vp": 2.02,
         "margem_liquida": 6.03,
-        "valor_mercado": "33,33 B",
+        "valor_mercado": "32,34 B",
         "dividendo_medio": 0.56,
         "setor": "Consumo nao Ciclico",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "RDOR3",
         "lucro": 4170000000.0,
-        "p_l": 19.52,
-        "p_vp": 3.19,
+        "p_l": 19.67,
+        "p_vp": 3.21,
         "margem_liquida": 7.95,
-        "valor_mercado": "79,69 B",
+        "valor_mercado": "80,31 B",
         "dividendo_medio": 2.11,
         "setor": "Sa\u00fade",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "MRFG3",
         "lucro": 4139999999.9999995,
-        "p_l": 6.78,
-        "p_vp": 6.79,
+        "p_l": 6.68,
+        "p_vp": 6.69,
         "margem_liquida": 1.8,
-        "valor_mercado": "19,11 B",
+        "valor_mercado": "18,83 B",
         "dividendo_medio": 11.08,
         "setor": "Consumo nao Ciclico",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "CXSE3",
         "lucro": 3960000000.0,
-        "p_l": 11.15,
+        "p_l": 11.17,
         "p_vp": 3.15,
         "margem_liquida": 0.0,
-        "valor_mercado": "44,16 B",
+        "valor_mercado": "44,22 B",
         "dividendo_medio": 7.66,
         "setor": "Financeiro",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "EQTL3",
         "lucro": 3890000000.0,
-        "p_l": 14.26,
-        "p_vp": 1.64,
+        "p_l": 14.61,
+        "p_vp": 1.68,
         "margem_liquida": 6.55,
-        "valor_mercado": "44,04 B",
+        "valor_mercado": "45,13 B",
         "dividendo_medio": 1.91,
         "setor": "Utilidade P\u00fablica",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "ISAE4",
         "lucro": 3620000000.0,
-        "p_l": 4.22,
-        "p_vp": 0.74,
+        "p_l": 4.31,
+        "p_vp": 0.75,
         "margem_liquida": 42.48,
-        "valor_mercado": "17,00 B",
+        "valor_mercado": "17,35 B",
         "dividendo_medio": 6.79,
         "setor": "Utilidade P\u00fablica",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "CMIN3",
         "lucro": 3610000000.0,
-        "p_l": 7.64,
-        "p_vp": 2.7,
+        "p_l": 7.87,
+        "p_vp": 2.78,
         "margem_liquida": 18.59,
-        "valor_mercado": "27,59 B",
+        "valor_mercado": "28,41 B",
         "dividendo_medio": 13.45,
         "setor": "Materiais Basicos",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "NEOE3",
         "lucro": 3570000000.0,
-        "p_l": 8.65,
-        "p_vp": 0.9,
+        "p_l": 9.0,
+        "p_vp": 0.93,
         "margem_liquida": 7.19,
-        "valor_mercado": "30,34 B",
+        "valor_mercado": "31,58 B",
         "dividendo_medio": 4.38,
         "setor": "Utilidade P\u00fablica",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "EGIE3",
         "lucro": 3440000000.0,
-        "p_l": 11.27,
-        "p_vp": 3.14,
+        "p_l": 11.9,
+        "p_vp": 3.31,
         "margem_liquida": 28.94,
-        "valor_mercado": "37,92 B",
+        "valor_mercado": "40,03 B",
         "dividendo_medio": 6.08,
         "setor": "Utilidade P\u00fablica",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "TIMS3",
         "lucro": 3430000000.0,
-        "p_l": 15.39,
-        "p_vp": 2.16,
+        "p_l": 16.01,
+        "p_vp": 2.25,
         "margem_liquida": 13.33,
-        "valor_mercado": "52,82 B",
+        "valor_mercado": "54,95 B",
         "dividendo_medio": 4.93,
         "setor": "Telecomunica\u00e7\u00f5es",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "GOAU4",
         "lucro": 3310000000.0,
-        "p_l": 8.21,
-        "p_vp": 0.47,
+        "p_l": 8.36,
+        "p_vp": 0.48,
         "margem_liquida": 1.64,
-        "valor_mercado": "9,19 B",
+        "valor_mercado": "9,33 B",
         "dividendo_medio": 10.13,
         "setor": "Materiais Basicos",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "GGBR3",
         "lucro": 3300000000.0,
-        "p_l": 9.36,
+        "p_l": 9.4,
         "p_vp": 0.55,
         "margem_liquida": 4.8,
-        "valor_mercado": "32,50 B",
+        "valor_mercado": "32,91 B",
         "dividendo_medio": 8.46,
         "setor": "Materiais Basicos",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "CPLE6",
         "lucro": 2930000000.0,
-        "p_l": 12.2,
-        "p_vp": 1.37,
+        "p_l": 12.53,
+        "p_vp": 1.4,
         "margem_liquida": 12.73,
-        "valor_mercado": "34,92 B",
+        "valor_mercado": "35,80 B",
         "dividendo_medio": 8.71,
         "setor": "Utilidade P\u00fablica",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "PSSA3",
         "lucro": 2870000000.0,
-        "p_l": 12.5,
-        "p_vp": 2.55,
+        "p_l": 12.95,
+        "p_vp": 2.64,
         "margem_liquida": 7.79,
-        "valor_mercado": "35,32 B",
+        "valor_mercado": "36,60 B",
         "dividendo_medio": 6.36,
         "setor": "Financeiro",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "UGPA3",
         "lucro": 2430000000.0,
-        "p_l": 8.65,
-        "p_vp": 1.29,
+        "p_l": 8.79,
+        "p_vp": 1.31,
         "margem_liquida": 1.66,
-        "valor_mercado": "19,59 B",
+        "valor_mercado": "19,91 B",
         "dividendo_medio": 3.09,
         "setor": "Petroleo, Gas e Biocombustiveis",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "SAPR11",
         "lucro": 2370000000.0,
-        "p_l": 4.58,
-        "p_vp": 0.93,
+        "p_l": 4.69,
+        "p_vp": 0.95,
         "margem_liquida": 34.97,
-        "valor_mercado": "11,23 B",
+        "valor_mercado": "11,46 B",
         "dividendo_medio": 5.81,
         "setor": "Utilidade P\u00fablica",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "LIGT3",
         "lucro": 2320000000.0,
-        "p_l": 1.04,
-        "p_vp": 0.43,
+        "p_l": 1.06,
+        "p_vp": 0.44,
         "margem_liquida": 15.41,
-        "valor_mercado": "2,42 B",
+        "valor_mercado": "2,46 B",
         "dividendo_medio": 1.85,
         "setor": "Utilidade P\u00fablica",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "EMBR3",
         "lucro": 2230000000.0,
-        "p_l": 26.81,
-        "p_vp": 3.24,
+        "p_l": 27.9,
+        "p_vp": 3.37,
         "margem_liquida": 5.91,
-        "valor_mercado": "59,26 B",
+        "valor_mercado": "61,67 B",
         "dividendo_medio": 0.0,
         "setor": "Bens Industriais",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "BNBR3",
         "lucro": 2180000000.0,
-        "p_l": 3.61,
-        "p_vp": 0.56,
+        "p_l": 3.8,
+        "p_vp": 0.59,
         "margem_liquida": 25.45,
-        "valor_mercado": "7,88 B",
+        "valor_mercado": "8,29 B",
         "dividendo_medio": 5.02,
         "setor": "Financeiro",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "CRFB3",
@@ -459,73 +459,73 @@
         "valor_mercado": "17,88 B",
         "dividendo_medio": 1.88,
         "setor": "Consumo nao Ciclico",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "KLBN11",
         "lucro": 2029999999.9999998,
-        "p_l": 12.98,
-        "p_vp": 2.72,
+        "p_l": 13.43,
+        "p_vp": 2.81,
         "margem_liquida": 9.0,
-        "valor_mercado": "23,57 B",
+        "valor_mercado": "24,40 B",
         "dividendo_medio": 4.21,
         "setor": "Materiais Basicos",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "CYRE3",
         "lucro": 2000000000.0,
-        "p_l": 5.79,
-        "p_vp": 1.06,
+        "p_l": 5.84,
+        "p_vp": 1.07,
         "margem_liquida": 20.48,
-        "valor_mercado": "9,89 B",
+        "valor_mercado": "9,98 B",
         "dividendo_medio": 4.91,
         "setor": "Consumo Ciclico",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "ALUP11",
         "lucro": 1940000000.0,
-        "p_l": 8.94,
-        "p_vp": 1.19,
+        "p_l": 9.08,
+        "p_vp": 1.2,
         "margem_liquida": 26.72,
-        "valor_mercado": "10,51 B",
+        "valor_mercado": "10,73 B",
         "dividendo_medio": 4.29,
         "setor": "Utilidade P\u00fablica",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "EQPA3",
         "lucro": 1940000000.0,
-        "p_l": 6.43,
-        "p_vp": 2.31,
+        "p_l": 6.44,
+        "p_vp": 2.32,
         "margem_liquida": 17.37,
-        "valor_mercado": "12,48 B",
+        "valor_mercado": "12,50 B",
         "dividendo_medio": 7.91,
         "setor": "Utilidade P\u00fablica",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "RENT3",
         "lucro": 1920000000.0,
-        "p_l": 21.53,
-        "p_vp": 1.57,
+        "p_l": 22.07,
+        "p_vp": 1.61,
         "margem_liquida": 4.97,
-        "valor_mercado": "41,40 B",
+        "valor_mercado": "42,45 B",
         "dividendo_medio": 2.23,
         "setor": "Consumo Ciclico",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "REDE3",
         "lucro": 1820000000.0,
-        "p_l": 10.62,
-        "p_vp": 3.39,
+        "p_l": 10.7,
+        "p_vp": 3.42,
         "margem_liquida": 7.35,
-        "valor_mercado": "14,10 B",
+        "valor_mercado": "14,20 B",
         "dividendo_medio": 9.09,
         "setor": "Utilidade P\u00fablica",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "CGAS3",
@@ -533,43 +533,43 @@
         "p_l": 9.51,
         "p_vp": 11.76,
         "margem_liquida": 11.79,
-        "valor_mercado": "16,84 B",
+        "valor_mercado": "16,87 B",
         "dividendo_medio": 8.61,
         "setor": "Utilidade P\u00fablica",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "CEEB3",
         "lucro": 1760000000.0,
-        "p_l": 5.25,
-        "p_vp": 1.23,
+        "p_l": 5.23,
+        "p_vp": 1.22,
         "margem_liquida": 11.21,
-        "valor_mercado": "11,46 B",
+        "valor_mercado": "11,06 B",
         "dividendo_medio": 11.27,
         "setor": "Utilidade P\u00fablica",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "TAEE11",
         "lucro": 1680000000.0,
-        "p_l": 7.05,
-        "p_vp": 1.63,
+        "p_l": 7.15,
+        "p_vp": 1.65,
         "margem_liquida": 42.41,
-        "valor_mercado": "11,86 B",
+        "valor_mercado": "12,02 B",
         "dividendo_medio": 10.87,
         "setor": "Utilidade P\u00fablica",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "MOTV3",
         "lucro": 1520000000.0,
-        "p_l": 18.9,
-        "p_vp": 1.93,
+        "p_l": 19.12,
+        "p_vp": 1.96,
         "margem_liquida": 6.7,
-        "valor_mercado": "27,45 B",
+        "valor_mercado": "27,77 B",
         "dividendo_medio": 2.8,
         "setor": "Bens Industriais",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "MVTO3",
@@ -580,29 +580,29 @@
         "valor_mercado": "27,17 B",
         "dividendo_medio": 2.8,
         "setor": "Bens Industriais",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "GMAT3",
         "lucro": 1410000000.0,
-        "p_l": 12.53,
-        "p_vp": 1.75,
+        "p_l": 12.8,
+        "p_vp": 1.78,
         "margem_liquida": 4.22,
-        "valor_mercado": "17,48 B",
+        "valor_mercado": "17,85 B",
         "dividendo_medio": 3.03,
         "setor": "Consumo nao Ciclico",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "CSMG3",
         "lucro": 1390000000.0,
-        "p_l": 7.7,
-        "p_vp": 1.29,
+        "p_l": 7.84,
+        "p_vp": 1.32,
         "margem_liquida": 17.26,
-        "valor_mercado": "10,73 B",
+        "valor_mercado": "10,93 B",
         "dividendo_medio": 10.87,
         "setor": "Utilidade P\u00fablica",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "MRSA3B",
@@ -610,43 +610,43 @@
         "p_l": 7.08,
         "p_vp": 1.26,
         "margem_liquida": 19.59,
-        "valor_mercado": "9,32 B",
+        "valor_mercado": "9,25 B",
         "dividendo_medio": 1.68,
         "setor": "Bens Industriais",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "MULT3",
         "lucro": 1310000000.0,
-        "p_l": 10.54,
-        "p_vp": 2.4,
+        "p_l": 10.73,
+        "p_vp": 2.44,
         "margem_liquida": 51.35,
-        "valor_mercado": "13,79 B",
+        "valor_mercado": "14,04 B",
         "dividendo_medio": 3.26,
         "setor": "Financeiro",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "LREN3",
         "lucro": 1280000000.0,
-        "p_l": 15.67,
-        "p_vp": 1.95,
+        "p_l": 15.95,
+        "p_vp": 1.99,
         "margem_liquida": 8.65,
-        "valor_mercado": "20,04 B",
+        "valor_mercado": "20,40 B",
         "dividendo_medio": 3.07,
         "setor": "Consumo Ciclico",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "RADL3",
         "lucro": 1180000000.0,
-        "p_l": 22.18,
+        "p_l": 22.19,
         "p_vp": 4.02,
         "margem_liquida": 2.95,
-        "valor_mercado": "26,08 B",
+        "valor_mercado": "26,10 B",
         "dividendo_medio": 0.94,
         "setor": "Sa\u00fade",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "BRAP4",
@@ -654,21 +654,21 @@
         "p_l": 5.55,
         "p_vp": 0.75,
         "margem_liquida": 0.0,
-        "valor_mercado": "6,31 B",
+        "valor_mercado": "6,32 B",
         "dividendo_medio": 16.97,
         "setor": "Financeiro",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "POMO4",
         "lucro": 1150000000.0,
-        "p_l": 8.01,
-        "p_vp": 2.3,
+        "p_l": 8.14,
+        "p_vp": 2.33,
         "margem_liquida": 13.18,
-        "valor_mercado": "8,45 B",
+        "valor_mercado": "8,59 B",
         "dividendo_medio": 4.89,
         "setor": "Bens Industriais",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "BAZA3",
@@ -679,51 +679,51 @@
         "valor_mercado": "4,18 B",
         "dividendo_medio": 8.3,
         "setor": "Financeiro",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "COGN3",
         "lucro": 1090000000.0,
-        "p_l": 5.44,
-        "p_vp": 0.43,
+        "p_l": 5.53,
+        "p_vp": 0.44,
         "margem_liquida": 15.13,
-        "valor_mercado": "5,35 B",
+        "valor_mercado": "5,44 B",
         "dividendo_medio": 0.0,
         "setor": "Consumo Ciclico",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "SMTO3",
         "lucro": 1080000000.0,
-        "p_l": 5.37,
-        "p_vp": 0.89,
+        "p_l": 5.54,
+        "p_vp": 0.92,
         "margem_liquida": 13.75,
-        "valor_mercado": "5,79 B",
+        "valor_mercado": "5,98 B",
         "dividendo_medio": 4.61,
         "setor": "Consumo nao Ciclico",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "JHSF3",
         "lucro": 1060000000.0,
-        "p_l": 3.36,
-        "p_vp": 0.62,
+        "p_l": 3.38,
+        "p_vp": 0.63,
         "margem_liquida": 62.12,
-        "valor_mercado": "3,58 B",
+        "valor_mercado": "3,60 B",
         "dividendo_medio": 6.26,
         "setor": "Consumo Ciclico",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "ABCB4",
         "lucro": 1040000000.0,
-        "p_l": 5.07,
+        "p_l": 5.09,
         "p_vp": 0.82,
         "margem_liquida": 10.2,
-        "valor_mercado": "5,30 B",
+        "valor_mercado": "5,32 B",
         "dividendo_medio": 6.19,
         "setor": "Financeiro",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "ENMT4",
@@ -734,29 +734,29 @@
         "valor_mercado": "15,63 B",
         "dividendo_medio": 3.63,
         "setor": "Utilidade P\u00fablica",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "ALOS3",
         "lucro": 962710000.0,
-        "p_l": 14.07,
-        "p_vp": 0.9,
+        "p_l": 14.28,
+        "p_vp": 0.92,
         "margem_liquida": 31.4,
-        "valor_mercado": "12,13 B",
+        "valor_mercado": "12,31 B",
         "dividendo_medio": 2.74,
         "setor": "Financeiro",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "ENEV3",
         "lucro": 951630000.0,
-        "p_l": 44.1,
-        "p_vp": 1.12,
+        "p_l": 45.07,
+        "p_vp": 1.15,
         "margem_liquida": 3.53,
-        "valor_mercado": "21,49 B",
+        "valor_mercado": "21,96 B",
         "dividendo_medio": 0.0,
         "setor": "Utilidade P\u00fablica",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "EKTR3",
@@ -767,117 +767,117 @@
         "valor_mercado": "8,01 B",
         "dividendo_medio": 12.89,
         "setor": "Utilidade P\u00fablica",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "WHRL4",
         "lucro": 896970000.0,
-        "p_l": 7.94,
-        "p_vp": 2.6,
+        "p_l": 7.64,
+        "p_vp": 2.5,
         "margem_liquida": 6.8,
-        "valor_mercado": "6,88 B",
+        "valor_mercado": "6,90 B",
         "dividendo_medio": 9.3,
         "setor": "Consumo Ciclico",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "ASAI3",
         "lucro": 826000000.0,
-        "p_l": 16.48,
-        "p_vp": 2.53,
+        "p_l": 16.78,
+        "p_vp": 2.57,
         "margem_liquida": 1.1,
-        "valor_mercado": "13,62 B",
+        "valor_mercado": "13,86 B",
         "dividendo_medio": 0.51,
         "setor": "Consumo nao Ciclico",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "ECOR3",
         "lucro": 812570000.0,
-        "p_l": 6.2,
-        "p_vp": 1.42,
+        "p_l": 6.25,
+        "p_vp": 1.43,
         "margem_liquida": 8.06,
-        "valor_mercado": "5,08 B",
+        "valor_mercado": "5,13 B",
         "dividendo_medio": 1.13,
         "setor": "Bens Industriais",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "TOTS3",
         "lucro": 806670000.0,
-        "p_l": 32.02,
-        "p_vp": 5.24,
+        "p_l": 32.58,
+        "p_vp": 5.33,
         "margem_liquida": 14.36,
-        "valor_mercado": "25,15 B",
+        "valor_mercado": "25,59 B",
         "dividendo_medio": 1.19,
         "setor": "Tecnologia da Informa\u00e7\u00e3o",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "HYPE3",
         "lucro": 800820000.0,
-        "p_l": 21.43,
+        "p_l": 21.54,
         "p_vp": 1.48,
         "margem_liquida": 12.08,
-        "valor_mercado": "17,33 B",
+        "valor_mercado": "17,43 B",
         "dividendo_medio": 3.98,
         "setor": "Sa\u00fade",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "STBP3",
         "lucro": 792650000.0,
-        "p_l": 15.03,
-        "p_vp": 19.61,
+        "p_l": 15.01,
+        "p_vp": 19.58,
         "margem_liquida": 25.23,
-        "valor_mercado": "11,92 B",
+        "valor_mercado": "11,90 B",
         "dividendo_medio": 4.44,
         "setor": "Bens Industriais",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "TTEN3",
         "lucro": 792350000.0,
-        "p_l": 9.27,
-        "p_vp": 1.77,
+        "p_l": 9.51,
+        "p_vp": 1.82,
         "margem_liquida": 5.82,
-        "valor_mercado": "7,36 B",
+        "valor_mercado": "7,55 B",
         "dividendo_medio": 0.66,
         "setor": "Consumo nao Ciclico",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "CURY3",
         "lucro": 778410000.0,
-        "p_l": 11.62,
-        "p_vp": 7.4,
+        "p_l": 11.83,
+        "p_vp": 7.53,
         "margem_liquida": 16.77,
-        "valor_mercado": "8,39 B",
+        "valor_mercado": "8,54 B",
         "dividendo_medio": 7.07,
         "setor": "Consumo Ciclico",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "BRSR6",
         "lucro": 767240000.0,
-        "p_l": 6.15,
+        "p_l": 6.22,
         "p_vp": 0.45,
         "margem_liquida": 4.3,
-        "valor_mercado": "4,84 B",
+        "valor_mercado": "4,87 B",
         "dividendo_medio": 7.82,
         "setor": "Financeiro",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "SLCE3",
         "lucro": 763480000.0,
-        "p_l": 10.66,
-        "p_vp": 1.62,
+        "p_l": 10.77,
+        "p_vp": 1.64,
         "margem_liquida": 8.64,
-        "valor_mercado": "7,97 B",
+        "valor_mercado": "8,05 B",
         "dividendo_medio": 4.76,
         "setor": "Consumo nao Ciclico",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "EQMA3B",
@@ -886,20 +886,20 @@
         "p_vp": 1.13,
         "margem_liquida": 12.37,
         "valor_mercado": "4,56 B",
-        "dividendo_medio": 9.93,
+        "dividendo_medio": 9.86,
         "setor": "Utilidade P\u00fablica",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "DIRR3",
         "lucro": 750120000.0,
-        "p_l": 10.58,
-        "p_vp": 3.17,
+        "p_l": 10.87,
+        "p_vp": 3.26,
         "margem_liquida": 18.26,
-        "valor_mercado": "6,90 B",
+        "valor_mercado": "7,09 B",
         "dividendo_medio": 5.79,
         "setor": "Consumo Ciclico",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "CEGR3",
@@ -910,62 +910,62 @@
         "valor_mercado": "25,05 B",
         "dividendo_medio": 1.87,
         "setor": "Utilidade P\u00fablica",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "CLSC4",
         "lucro": 736470000.0,
-        "p_l": 5.42,
-        "p_vp": 1.03,
+        "p_l": 5.44,
+        "p_vp": 1.04,
         "margem_liquida": 6.67,
         "valor_mercado": "3,77 B",
         "dividendo_medio": 5.8,
         "setor": "Utilidade P\u00fablica",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "VIVA3",
         "lucro": 732620000.0,
-        "p_l": 8.53,
-        "p_vp": 2.39,
+        "p_l": 8.72,
+        "p_vp": 2.45,
         "margem_liquida": 27.44,
-        "valor_mercado": "6,25 B",
+        "valor_mercado": "6,39 B",
         "dividendo_medio": 0.98,
         "setor": "Consumo Ciclico",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "BPAN4",
         "lucro": 725310000.0,
-        "p_l": 13.55,
-        "p_vp": 1.3,
+        "p_l": 13.83,
+        "p_vp": 1.33,
         "margem_liquida": 4.78,
-        "valor_mercado": "9,72 B",
+        "valor_mercado": "9,92 B",
         "dividendo_medio": 3.38,
         "setor": "Financeiro",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "GRND3",
         "lucro": 708910000.0,
-        "p_l": 6.86,
-        "p_vp": 1.24,
+        "p_l": 6.83,
+        "p_vp": 1.23,
         "margem_liquida": 26.72,
-        "valor_mercado": "4,86 B",
+        "valor_mercado": "4,84 B",
         "dividendo_medio": 9.36,
         "setor": "Consumo Ciclico",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "IRBR3",
         "lucro": 703020000.0,
-        "p_l": 5.27,
-        "p_vp": 0.73,
+        "p_l": 5.44,
+        "p_vp": 0.75,
         "margem_liquida": 11.72,
-        "valor_mercado": "3,70 B",
+        "valor_mercado": "3,82 B",
         "dividendo_medio": 0.32,
         "setor": "Financeiro",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "CBEE3",
@@ -976,117 +976,117 @@
         "valor_mercado": "2,40 B",
         "dividendo_medio": 0.99,
         "setor": "Utilidade P\u00fablica",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "GGPS3",
         "lucro": 675370000.0,
-        "p_l": 16.06,
-        "p_vp": 2.9,
+        "p_l": 16.42,
+        "p_vp": 2.97,
         "margem_liquida": 4.21,
-        "valor_mercado": "10,70 B",
+        "valor_mercado": "10,93 B",
         "dividendo_medio": 1.22,
         "setor": "Bens Industriais",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "SYNE3",
         "lucro": 670940000.0,
-        "p_l": 1.6,
-        "p_vp": 0.82,
+        "p_l": 1.64,
+        "p_vp": 0.84,
         "margem_liquida": 42.0,
-        "valor_mercado": "894,50 M",
+        "valor_mercado": "915,87 M",
         "dividendo_medio": 37.26,
         "setor": "Financeiro",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "UNIP6",
         "lucro": 651570000.0,
-        "p_l": 9.98,
-        "p_vp": 2.45,
+        "p_l": 10.27,
+        "p_vp": 2.52,
         "margem_liquida": 11.55,
-        "valor_mercado": "6,30 B",
+        "valor_mercado": "6,44 B",
         "dividendo_medio": 9.32,
         "setor": "Materiais Basicos",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "FLRY3",
         "lucro": 611170000.0,
-        "p_l": 11.38,
-        "p_vp": 1.37,
+        "p_l": 11.26,
+        "p_vp": 1.35,
         "margem_liquida": 8.05,
-        "valor_mercado": "7,14 B",
+        "valor_mercado": "7,06 B",
         "dividendo_medio": 4.55,
         "setor": "Sa\u00fade",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "VULC3",
         "lucro": 587170000.0,
-        "p_l": 9.84,
-        "p_vp": 2.62,
+        "p_l": 10.15,
+        "p_vp": 2.7,
         "margem_liquida": 18.63,
-        "valor_mercado": "5,78 B",
+        "valor_mercado": "5,96 B",
         "dividendo_medio": 6.34,
         "setor": "Consumo Ciclico",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "RAPT4",
         "lucro": 579100000.0,
-        "p_l": 8.93,
+        "p_l": 8.98,
         "p_vp": 0.92,
         "margem_liquida": 2.54,
-        "valor_mercado": "2,80 B",
+        "valor_mercado": "2,81 B",
         "dividendo_medio": 5.24,
         "setor": "Bens Industriais",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "PORT3",
         "lucro": 577960000.0,
-        "p_l": 13.41,
+        "p_l": 13.43,
         "p_vp": 2.79,
         "margem_liquida": 18.73,
-        "valor_mercado": "7,66 B",
+        "valor_mercado": "7,68 B",
         "dividendo_medio": 4.94,
         "setor": "Bens Industriais",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "SBFG3",
         "lucro": 565260000.0,
-        "p_l": 5.07,
-        "p_vp": 0.99,
+        "p_l": 5.26,
+        "p_vp": 1.02,
         "margem_liquida": 7.85,
-        "valor_mercado": "2,87 B",
+        "valor_mercado": "2,98 B",
         "dividendo_medio": 1.23,
         "setor": "Consumo Ciclico",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "ODPV3",
         "lucro": 562010000.0,
-        "p_l": 11.47,
-        "p_vp": 4.73,
+        "p_l": 11.34,
+        "p_vp": 4.67,
         "margem_liquida": 24.29,
-        "valor_mercado": "6,45 B",
+        "valor_mercado": "6,38 B",
         "dividendo_medio": 5.41,
         "setor": "Sa\u00fade",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "MDIA3",
         "lucro": 560420000.0,
-        "p_l": 14.61,
+        "p_l": 14.62,
         "p_vp": 1.03,
         "margem_liquida": 5.76,
         "valor_mercado": "8,19 B",
         "dividendo_medio": 2.07,
         "setor": "Consumo nao Ciclico",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "RECV3",
@@ -1097,172 +1097,172 @@
         "valor_mercado": "4,30 B",
         "dividendo_medio": 7.96,
         "setor": "Petroleo, Gas e Biocombustiveis",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "LEVE3",
         "lucro": 499630000.0,
-        "p_l": 8.1,
-        "p_vp": 4.57,
+        "p_l": 8.18,
+        "p_vp": 4.61,
         "margem_liquida": 10.4,
-        "valor_mercado": "4,05 B",
+        "valor_mercado": "4,09 B",
         "dividendo_medio": 11.28,
         "setor": "Consumo Ciclico",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "BMEB4",
         "lucro": 476730000.0,
-        "p_l": 9.01,
-        "p_vp": 2.22,
+        "p_l": 9.0,
+        "p_vp": 2.21,
         "margem_liquida": 7.37,
-        "valor_mercado": "3,75 B",
+        "valor_mercado": "3,81 B",
         "dividendo_medio": 6.22,
         "setor": "Financeiro",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "BEES3",
         "lucro": 472660000.0,
-        "p_l": 5.8,
+        "p_l": 5.81,
         "p_vp": 1.2,
         "margem_liquida": 10.23,
         "valor_mercado": "2,75 B",
         "dividendo_medio": 6.94,
         "setor": "Financeiro",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "EZTC3",
         "lucro": 469390000.0,
-        "p_l": 6.94,
+        "p_l": 6.93,
         "p_vp": 0.63,
         "margem_liquida": 27.07,
-        "valor_mercado": "3,07 B",
+        "valor_mercado": "3,06 B",
         "dividendo_medio": 3.92,
         "setor": "Consumo Ciclico",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "SMFT3",
         "lucro": 467040000.0,
-        "p_l": 29.25,
-        "p_vp": 2.45,
+        "p_l": 29.64,
+        "p_vp": 2.49,
         "margem_liquida": 7.73,
-        "valor_mercado": "13,57 B",
+        "valor_mercado": "13,75 B",
         "dividendo_medio": 3.1,
         "setor": "Consumo Ciclico",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "INTB3",
         "lucro": 436070000.0,
-        "p_l": 11.07,
-        "p_vp": 1.65,
+        "p_l": 11.45,
+        "p_vp": 1.7,
         "margem_liquida": 9.43,
-        "valor_mercado": "4,84 B",
+        "valor_mercado": "5,01 B",
         "dividendo_medio": 2.85,
         "setor": "Telecomunica\u00e7\u00f5es",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "MGLU3",
         "lucro": 433560000.0,
-        "p_l": 15.53,
-        "p_vp": 0.59,
+        "p_l": 15.68,
+        "p_vp": 0.6,
         "margem_liquida": 1.14,
-        "valor_mercado": "6,73 B",
+        "valor_mercado": "6,80 B",
         "dividendo_medio": 0.08,
         "setor": "Consumo Ciclico",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "PLPL3",
         "lucro": 421710000.0,
-        "p_l": 8.37,
-        "p_vp": 3.86,
+        "p_l": 8.42,
+        "p_vp": 3.88,
         "margem_liquida": 13.69,
-        "valor_mercado": "3,09 B",
+        "valor_mercado": "3,11 B",
         "dividendo_medio": 4.28,
         "setor": "Financeiro",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "LAVV3",
         "lucro": 416700000.0,
-        "p_l": 6.72,
-        "p_vp": 1.37,
+        "p_l": 6.89,
+        "p_vp": 1.4,
         "margem_liquida": 22.48,
-        "valor_mercado": "2,41 B",
+        "valor_mercado": "2,48 B",
         "dividendo_medio": 10.14,
         "setor": "Consumo Ciclico",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "CEAB3",
         "lucro": 385700000.0,
-        "p_l": 15.82,
-        "p_vp": 1.87,
+        "p_l": 16.64,
+        "p_vp": 1.97,
         "margem_liquida": 4.95,
-        "valor_mercado": "6,10 B",
+        "valor_mercado": "6,42 B",
         "dividendo_medio": 0.86,
         "setor": "Consumo Ciclico",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "AZZA3",
         "lucro": 384810000.0,
-        "p_l": 21.1,
-        "p_vp": 1.04,
+        "p_l": 21.77,
+        "p_vp": 1.08,
         "margem_liquida": 3.86,
-        "valor_mercado": "8,15 B",
+        "valor_mercado": "8,41 B",
         "dividendo_medio": 2.03,
         "setor": "Consumo Ciclico",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "LOGG3",
         "lucro": 375440000.0,
-        "p_l": 4.77,
+        "p_l": 4.84,
         "p_vp": 0.49,
         "margem_liquida": 169.3,
-        "valor_mercado": "1,79 B",
+        "valor_mercado": "1,81 B",
         "dividendo_medio": 4.94,
         "setor": "Financeiro",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "COCE5",
         "lucro": 371880000.0,
-        "p_l": 6.28,
+        "p_l": 6.25,
         "p_vp": 0.45,
         "margem_liquida": 4.4,
-        "valor_mercado": "1,98 B",
+        "valor_mercado": "1,88 B",
         "dividendo_medio": 3.74,
         "setor": "Utilidade P\u00fablica",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "FRAS3",
         "lucro": 335530000.0,
-        "p_l": 22.1,
-        "p_vp": 3.4,
+        "p_l": 22.64,
+        "p_vp": 3.48,
         "margem_liquida": 7.36,
-        "valor_mercado": "7,24 B",
+        "valor_mercado": "7,42 B",
         "dividendo_medio": 2.72,
         "setor": "Bens Industriais",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "MYPK3",
         "lucro": 333790000.0,
-        "p_l": 8.92,
-        "p_vp": 0.47,
+        "p_l": 9.1,
+        "p_vp": 0.48,
         "margem_liquida": 1.44,
-        "valor_mercado": "2,01 B",
+        "valor_mercado": "2,05 B",
         "dividendo_medio": 5.12,
         "setor": "Consumo Ciclico",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "CASN3",
@@ -1273,50 +1273,50 @@
         "valor_mercado": "7,67 B",
         "dividendo_medio": 0.28,
         "setor": "Utilidade P\u00fablica",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "VTRU3",
         "lucro": 330710000.0,
-        "p_l": 3.63,
-        "p_vp": 0.46,
+        "p_l": 3.76,
+        "p_vp": 0.48,
         "margem_liquida": 15.15,
-        "valor_mercado": "1,20 B",
-        "dividendo_medio": 0.23,
+        "valor_mercado": "1,24 B",
+        "dividendo_medio": 0.24,
         "setor": "Consumo Ciclico",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "GUAR3",
         "lucro": 325480000.0,
-        "p_l": 12.68,
-        "p_vp": 0.77,
+        "p_l": 13.45,
+        "p_vp": 0.81,
         "margem_liquida": 3.31,
-        "valor_mercado": "4,13 B",
+        "valor_mercado": "4,38 B",
         "dividendo_medio": 2.18,
         "setor": "Consumo Ciclico",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "RANI3",
         "lucro": 322570000.0,
-        "p_l": 5.49,
-        "p_vp": 1.25,
+        "p_l": 5.62,
+        "p_vp": 1.28,
         "margem_liquida": 19.35,
-        "valor_mercado": "1,77 B",
+        "valor_mercado": "1,81 B",
         "dividendo_medio": 5.98,
         "setor": "Materiais Basicos",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     },
     {
         "codigo": "YDUQ3",
         "lucro": 319170000.0,
-        "p_l": 14.68,
-        "p_vp": 1.51,
+        "p_l": 14.94,
+        "p_vp": 1.54,
         "margem_liquida": 5.94,
-        "valor_mercado": "4,69 B",
+        "valor_mercado": "4,77 B",
         "dividendo_medio": 1.9,
         "setor": "Consumo Ciclico",
-        "data": "2025-07-03"
+        "data": "2025-07-04"
     }
 ]
